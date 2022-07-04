@@ -1,0 +1,345 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	min-width: 320px;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+}
+
+.content {
+	background-image: url('../images/Bread.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;	
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+div.wrapper {
+   width: 100%;
+   margin: 0 auto;
+}
+
+nav {
+   background: rgba(86, 83, 76, 0.4);
+}
+
+nav input {
+   display: none;
+}
+
+nav label {
+   padding: 10px 15px;
+  	color: #ffffff;
+  	display: none;
+}
+
+img.burger {
+	width: 32px;
+}
+
+
+.menuToggle {
+	padding: 10px 15px;
+	cursor: pointer;
+	color: #ffffff;
+	display: none;
+}
+
+ul.menu {
+   list-style-type: none;
+   margin: 0; 
+   padding: 0;
+   text-align: center;
+}
+
+.menu li {
+   display: inline-block;
+}
+
+.menu li a {
+   display: block;
+   color: #fff;
+   text-decoration: none;
+   padding: 30px 20px;
+   font-family: Alegreya;
+   font-size: 14px;
+   letter-spacing: 4.2px;
+   color: #ffffff;
+   text-transform: uppercase;
+}
+
+ul.menu a:hover {
+	background: rgba(86, 83, 76, 0.9);
+	transition-delay: 0.1s;
+}
+
+span.logo1 {
+	position: absolute;
+	left: 20px;
+	top: 7px;
+	color: #ffffff;
+	font-family: 'Scriptina Pro', sans-serif;
+	font-size: 30px;
+	font-weight: 400;
+	letter-spacing: 9px;
+}
+
+.logo {
+	position: absolute;
+	right: 30px;
+	top: 13px;
+}
+
+.logo li {
+	display: table-cell;
+	text-align: center;
+	width: 30px;
+}
+
+ul.logo li a img:hover {
+  	transform: scale(1.6);
+}
+
+div.shadow {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	width: 90%;
+	margin: 0 auto;
+	background-image: radial-gradient(circle 457px at center, #564f4c 5%, rgba(86, 83, 76, 0) 100%);
+}	
+
+.text {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+div.tagline p {
+	margin-top: 250px;
+	margin-bottom: 0;
+	text-shadow: 3px 2px 0 #3d3029;
+	color: #ffffff;
+	font: 92px 'Playfair Display', serif;
+	font-weight: 700;
+	font-style: normal;
+	letter-spacing: normal;
+	line-height: 24px;
+	text-align: center;
+	font-style: normal;
+	letter-spacing: 6.9px;
+	line-height: normal;
+}
+
+div.line {
+	width: 230px;
+	margin: 0 auto;
+	margin-top: 55px;
+}
+
+div.tagline1 p {
+	width: 544px;
+	height: 56px;
+	text-shadow: 2px 1px 0 #3d3029;
+	color: #ffffff;
+	font: 22px 'Proxima Nova Condensed', sans-serif;
+	font-weight: 200;
+	margin: 0 auto;
+	line-height: 36px;
+	text-align: center;
+	letter-spacing: 2.4px;
+	margin-top: 55px;
+}
+
+div.button {
+	width: 200px;
+	height: 50px;
+	border: 1px dashed #9e9c93;
+	background: rgba(86, 83, 76, 0.7);
+	margin: 0 auto;
+	margin-top: 80px;
+	margin-bottom: 150px;
+}
+
+div.button:hover {
+	background: rgba(86, 83, 76, 0.9);
+}
+
+div.buttonLink a p {
+	color: #ffffff;
+	font: 14px 'Alegreya', serif;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 18px;
+	text-transform: uppercase;
+	letter-spacing: 4.2px;
+	padding-top: 3px;
+	padding-left: 3px;
+	text-align: center;
+	text-decoration: none;
+}
+
+div.buttonLink a {
+	text-decoration: none;
+}
+
+div.footer {
+	height: 80px;
+	line-height: 82px;
+	color: #ffffff;
+	font-family: 'Scriptina Pro', sans-serif;
+	font-size: 30px;
+	font-weight: 400;
+	letter-spacing: 9px;
+	text-align: center;
+	background: rgba(86, 83, 76, 0.4);
+	text-shadow: 3px 2px 0 #3d3029;
+}
+
+@media only all and (max-width: 1024px) {
+	
+	div.text div.tagline p {
+		margin-top: 180px;
+		margin-bottom: 0;
+		text-shadow: 3px 2px 0 #3d3029;
+		color: #ffffff;
+		font: 50px 'Playfair Display', serif;
+		font-weight: 700;
+		line-height: 24px;
+		letter-spacing: 6.9px;		
+	}
+
+	div.tagline1 p {
+		text-shadow: 2px 1px 0 #3d3029;
+		color: #ffffff;
+		font: 18px 'Proxima Nova Condensed', sans-serif;
+		font-weight: 200;
+		margin: 0 auto;
+		line-height: 36px;
+		text-align: center;
+		letter-spacing: 2.4px;
+		margin-top: 55px;
+	}
+
+   .menu li a {
+	   padding: 20px 8px;
+	   font-size: 13px;
+	}
+
+	.logo {
+		right: 10px;
+		top: 3px;	
+	}
+
+	.logo li {
+		display: table-cell;
+		text-align: center;
+		width: 20px;  
+	}
+
+	span.logo1 {
+		left: 5px;
+		top: 3px;
+		color: #ffffff;
+		font-family: 'Scriptina Pro', sans-serif;
+		font-size: 24px;
+		font-weight: 400;
+		letter-spacing: 5px;  
+	}
+
+	div.footer {
+		height: 60px;
+		font-size: 25px;
+		line-height: 55px;	
+	}
+}
+
+@media only all and (max-width: 768px) {
+
+  	nav label {
+      display: block;
+      width: 100%;  
+   }
+
+   #menuToggle:checked + .menu {
+	   display: block;
+	   position: absolute;
+	   background: rgba(86, 83, 76, 0.7);
+	   width: 100%;
+	   left: 0;
+      transition-delay: 0.1s;	
+   }
+  
+   .menu li {
+    	display: block;	
+   }
+  
+   .menu {
+    	display: none;
+   }
+
+   span.logo1 {
+		left: 50%;
+	   transform: translate(-50%, 0);
+		top: 7px;
+		color: #ffffff;
+		font-size: 20px;
+		font-weight: 400;
+		letter-spacing: 5px;  
+	}
+
+	div.text div.tagline p {
+		font: 35px 'Playfair Display', serif;
+		font-weight: 700;
+		line-height: 34px;
+		letter-spacing: 6.9px;	
+	}
+
+	div.tagline1 p {
+		width: 250px;
+		text-shadow: 2px 1px 0 #3d3029;
+		color: #ffffff;
+		font: 16px 'Proxima Nova Condensed', sans-serif;
+		font-weight: 200;
+		margin: 0 auto;
+		line-height: 20px;
+		text-align: center;
+		letter-spacing: 2.4px;
+		margin-top: 45px;
+	}
+
+	div.text div.tagline p {
+		margin-top: 120px;
+	}
+
+	div.button {
+		width: 140px;
+		height: 35px;
+		margin-top: 60px;
+		margin-bottom: 80px;
+	}
+
+	div.buttonLink a p {
+		color: #ffffff;
+		font: 10px 'Alegreya', serif;
+		vertical-align: center;
+		margin-top: 7px;	
+	}
+
+	div.footer {
+		height: 35px;
+		font-size: 16px;
+		line-height: 36px;	
+		letter-spacing: 4px;
+	}
+}
